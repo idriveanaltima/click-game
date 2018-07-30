@@ -1,6 +1,10 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import { Col, Row, Container } from "../../components/Grid";
+<<<<<<< HEAD
+=======
+import Jumbotron from "../../components/Jumbotron";
+>>>>>>> 62b749493abe88398e58b3abb8c8da60e28b1cae
 import API from "../../utils/API";
 
 class Detail extends Component {
@@ -20,10 +24,18 @@ class Detail extends Component {
       <Container fluid>
         <Row>
           <Col size="md-12">
+<<<<<<< HEAD
               <h1>
                 {this.state.book.title} by {this.state.book.author}
               </h1>
 
+=======
+            <Jumbotron>
+              <h1>
+                {this.state.book.title} by {this.state.book.author}
+              </h1>
+            </Jumbotron>
+>>>>>>> 62b749493abe88398e58b3abb8c8da60e28b1cae
           </Col>
         </Row>
         <Row>
