@@ -13,9 +13,11 @@ class App extends React.Component {
   };
 
   handleClick = id => {
+    console.log("what is the" + id)
     if (this.state.clicked === false) {
       this.handleIncrement();
-      this.setState({ clicked: this.state.clicked === true });
+      this.setState({ clicked: this.state.clicked = true });
+      console.log("is this true?" + this.state.clicked)
     } else {
       this.handleReset();
     }
@@ -27,6 +29,7 @@ class App extends React.Component {
       currentScore: newScore,
     });
     if (newScore === 12 || newScore > this.state.topScore) {
+      console.log("Does this ever get executed?")
       this.setState({ topScore: newScore });
     }
     this.handleShuffle();
